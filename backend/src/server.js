@@ -1,5 +1,9 @@
 const api = require('./api')
 
-api.listen(3333, () => {
-    console.log('Server running on port 3333');
+require('dotenv').config();
+
+const PORT = process.env.PORT || 3333;
+
+api.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
