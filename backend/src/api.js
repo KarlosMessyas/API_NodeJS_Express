@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = requiere('cors');
+const cors = require('cors');
 const api = express();
 api.use(express.json());
 
